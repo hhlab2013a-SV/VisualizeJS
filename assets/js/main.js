@@ -21,8 +21,8 @@ require(['jquery', 'util', 'chaser', 'visualizejs/JsVisualizer'], function($, ut
     var code = util.getCodeFromTextArea('#code');
 
     // コードをパーサーに渡して解析結果を取得
-    // var data = Chaser.execute(code);
-    var data = util.getSampleData();//debug
+    var data = Chaser.execute(code);
+    //var data = util.getSampleData();//debug
 
     // データをビジュアライズする
     var jsVisualizer = new JsVisualizer({
