@@ -1,4 +1,4 @@
-Visualize JS
+Visualization JS
 ---
 
 JavaScriptコードの可視化プロジェクト

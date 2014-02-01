@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>VisualizationJS</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="all">
+  <script data-main="assets/js/main" src="assets/lib/requirejs/require.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="page-head">
+      <h1>
+        <a id="logo" href="./" target="_self">
+          <img src="assets/img/1x1.png" alt="サイトロゴ">
+        </a>
+      </h1>
+      <nav id="global-nav">
+        <ul>
+          <li>
+            <a href="" target="_self">ホーム</a>
+          </li>
+          <li>
+            <a href="http://github.com/hhlab2013a-SV/VisualizeJS" target="_blank">ソースコード</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside id="info">
+      <p>
+        JavaScriptの視覚化を色々試してみるページ。
+      </p>
+    </aside>
+    <div id="container">
+      <section id="paste" class="step">
+        <div class="left">
+          <h2><span class="big-num">1</span>&nbsp;コードを貼り付ける</h2>
+          <div id="sample-code">
+            <button id="sample1">サンプル1</button>
+            <button id="sample2">サンプル2</button>
+          </div>
+        </div>
+        <textarea id="code" class="right"></textarea>
+      </section>
+      <section id="click" class="step">
+        <div class="left">
+          <h2><span class="big-num">2</span>&nbsp;実行ボタンをクリック</h2>
+        </div>
+        <div class="right">
+          <button id="visualize-btn">実行</button>
+        </div>
+      </section>
+      <section id="result" class="step">
+        <div class="left">
+          <h2><span class="big-num">3</span>&nbsp;こんな感じ</h2>
+        </div>
+        <div class="right">
+          <div id="enchant-stage"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
