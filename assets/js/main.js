@@ -20,10 +20,10 @@ require(['jquery', 'util', 'chaser', 'visualizejs/JsVisualizer'], function($, ut
     // textareaからコード（文字列）を取得
     var code = util.getCodeFromTextArea('#code');
 
-    // コードをパーサーに渡す
+    // コードをパーサーに渡して解析結果を取得
     var data = Chaser.execute(code);
 
-    // ビジュアライズする
+    // データをビジュアライズする
     var jsVisualizer = new JsVisualizer({
       width: 652,
       height: 297,
